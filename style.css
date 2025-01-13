@@ -1,0 +1,102 @@
+#spreadsheet-container {
+    border: 1px solid #ccc;
+    margin: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    display: inline-block;
+    font-family: sans-serif;
+}
+table {
+     border-collapse: collapse;
+ }
+ th, td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: center;
+   min-width: 50px;
+    position: relative;
+}
+th{
+    background-color: #f2f2f2;
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+#formula-bar{
+    margin: 0 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+#formula-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1em;
+    flex-grow: 1;
+    font-family: sans-serif;
+}
+#name-box{
+     padding: 5px;
+    font-size: 1em;
+     font-family: sans-serif;
+     text-align: center;
+      width: 100%;
+    box-sizing: border-box;
+     border: none;
+     outline: none;
+}
+#toolbar {
+    display: flex;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ccc;
+     margin: 0 20px 10px 20px;
+    font-family: sans-serif;
+}
+ #toolbar button {
+     background-color: transparent;
+     border: none;
+   cursor: pointer;
+   padding: 5px 10px;
+   }
+#formula-bar input[type="number"], #formula-bar input[type="color"] {
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    padding: 5px;
+    cursor: pointer;
+     outline: none;
+ }
+ .new-column-header {
+     background-color: #dff0d8; /* A light green color */
+    }
+    th::after, td::after {
+       content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+         bottom: 0;
+        width: 5px;
+         cursor: ew-resize;
+        background-color: transparent;
+    }
+    th:hover::after, td:hover::after {
+        background-color: rgba(0,0,0,0.1);
+    }
+    #file-menu-container{
+       position: relative;
+   }
+    #file-menu {
+      position: absolute;
+       background-color: white;
+       border: 1px solid #ccc;
+       display: none; /* Initially hide the menu */
+        z-index: 1; /* Ensure the menu appears above other elements */
+   }
+    #file-menu button{
+      display: block;
+       text-align: left;
+     }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Mimic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div id="toolbar">
+        <div id="file-menu-container">
+            <button id="file-btn">File</button>
+            <div id="file-menu" style="display:none;">
+                <button id="new-file-btn">New File</button>
+            </div>
+         </div>
+         <button>Edit</button>
+         <button>View</button>
+         <button>Insert</button>
+         <button>Format</button>
+         <button>Data</button>
+         <button>Tools</button>
+         <button>Help</button>
+          <button id="add-row-btn">Add Row</button>
+         <button id="add-col-btn">Add Column</button>
+     </div>
+     <div id="formula-bar">
+          <input type="text" id="name-box" style="width:50px"  placeholder="cell"/>
+           <button id="bold-btn">B</button>
+          <button id="italic-btn">I</button>
+        <input type="number" id="font-size-input" value="12" style="width: 50px" min="8" max="30">
+        <input type="color" id="font-color-input" value="#000000" style="width:50px">
+        <input type="text" id="formula-input" placeholder="Enter formula here">
+    </div>
+     <div id="spreadsheet-container">
+          <!-- This is where our spreadsheet will go -->
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
